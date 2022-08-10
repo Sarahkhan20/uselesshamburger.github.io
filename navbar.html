@@ -64,23 +64,31 @@ a{
      overflow-x: hidden;
     }
     .nav-menu{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        right: 0px;
+    }
+    .nav-active{
+        visibility: visible;
         position: absolute;
-      right: 0px;
+        left: 600px;
         height: 92vh;
         top: 9vh;
         background-color: black;
         display: flex;
         flex-direction:column ;
         align-items: center;
-        width: 30%;
-        transform: translateX(100%);
+        width: 40%;
+        transform: translateX(-100%);
         transition: transform 0.5s ease-in;
     }
-    .nav-menu li{
+    /* .nav-menu li{
         opacity: 0;
-    }
+    } */
     .hamburger{
         display: block;
+        visibility: visible;
     }
     
     
